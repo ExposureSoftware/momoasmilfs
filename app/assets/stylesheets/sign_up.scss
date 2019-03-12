@@ -1,0 +1,50 @@
+// Place all the styles related to the SignUp controller here.
+// They will automatically be included in application.scss.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1.title {
+  text-align: center;
+}
+
+.float.right {
+  float: right;
+}
+
+img {
+  margin: 0.5rem;
+}
+
+img.small {
+  height: 200px;
+}
+
+div, p {
+  font-size: xx-large;
+  padding-bottom: 1rem;
+}
+
+div.footer {
+  font-size: x-small;
+  text-align: center;
+}
+
+div.signup {
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+}
+
+input[type="text"] {
+  background-color: #8e329a;
+  border: none;
+  font-size: xx-large;;
+  padding: 0.25rem;
+  color: #1d0342;
+}
+
+.btn {
+  background-color: #8e329a;
+  color: #1d0342;
+  font-size: xx-large;
+}

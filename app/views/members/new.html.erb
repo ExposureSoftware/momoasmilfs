@@ -1,0 +1,11 @@
+<%= form_with scope: :member, url: members_path, local: true do |form| %>
+  <div>
+    <%= form.label :email %>
+  </div>
+  <div>
+    <%= form.text_field :email %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

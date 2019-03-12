@@ -1,0 +1,41 @@
+<h1 class="title">Momoa's MILFs</h1>
+<div>Welcome to Momoa's MILFs.</div>
+<%= image_tag 'momoas.png', :class => 'small float right' %>
+<div>
+  Are you a fan of the hunky Jason Momoa? Do Girl Scout Momoas make your mouth water? Join the premier Jason
+  Momoa fan club now! Your membership will bring you a daily picture the <em>Aquaman</em> star himself direct
+  to your email.
+</div>
+<div>
+  Each day a new image is randomly selected from all images publicly available on the internet. The selected image
+  is sent directly to you via email. Just the email, right in your inbox. No spam. No marketing. Just a single
+  image of a sexy celebrity.
+</div>
+<div>
+  Coming soon:
+  <ul>
+    <li>
+      Customize your search terms to tailor your images.
+    </li>
+    <li>
+      Toggle NSFW images.
+    </li>
+  </ul>
+</div>
+<div class="signup">
+  <%= form_for [@member, Member.new], :remote => true do |form| %>
+    <div>
+      <div>
+        <%= form.label :email %>
+        <%= form.text_field :email %>
+      </div>
+      <div>
+        <%= form.submit "Sign Up", :class => 'btn' %>
+      </div>
+    </div>
+  <% end %>
+</div>
+<div class="footer">
+  This site is not affiliated with, endorsed by, acknowledged by, or otherwise related to Jason Momoa, The Girl Scouts
+  or any other entity.
+</div>
