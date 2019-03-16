@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'sign_up/index'
+  get 'verify/:id', to: 'verification#verify'
 
   resources :members
 
