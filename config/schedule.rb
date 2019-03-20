@@ -18,3 +18,10 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
+
+set :chronic_options, hours24: true
+set :output, "/var/www/momoasmilfs.club/log/whenever.log"
+
+every :day, at: '2:00' do
+  rake "background:fetch_image"
+end
