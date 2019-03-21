@@ -21,6 +21,7 @@
 
 set :chronic_options, hours24: true
 set :output, "/var/www/momoasmilfs.club/log/whenever.log"
+set :bundle_command, '/usr/local/bin/bundle'
 
 every :day, at: '2:00' do
   rake "background:fetch_image"
