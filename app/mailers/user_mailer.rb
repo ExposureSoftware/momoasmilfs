@@ -9,7 +9,7 @@ class UserMailer < ApplicationMailer
 
   def daily_image
     @user = params[:user]
-    @image = Image.order('created_at').last
+    @image = params[:image]
     mail(to: @user.email, subject: 'Daily Momoa Image', from: 'images@momoasmilfs.club')
   end
 end
