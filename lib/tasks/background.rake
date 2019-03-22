@@ -27,4 +27,15 @@ namespace :background do
     puts "Saved image #{image.id} titled '#{image.title}'."
   end
 
+  desc "Send the daily image via email."
+  task mail_image: :environment do
+    members = Member.where('verified').all
+    puts "Found #{members.count} verified members."
+    image = Image.order('created_at').last
+
+    members.each do |member|
+      puts "Sending image to #{member.email}"
+      UserMailer.with(user: member, image: image).daily_image.deliver_now
+    end
+  end
 end
