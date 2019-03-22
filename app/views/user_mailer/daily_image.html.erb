@@ -5,10 +5,19 @@
   <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
 </head>
 <body>
-<h1>Daily Momoa Image!</h1>
-<p>
-  <img src="<%= @image.url %>" alt="<%= @image.title %>">
-</p>
-<p>Thanks and have a great day!</p>
+<div>
+  <h1>Daily Momoa Image!</h1>
+  <div>
+    <img src="<%= @image.url %>" alt="<%= @image.title %>">
+  </div>
+  <div>
+    Please enjoy this image and if you wish to support continued operation of Momoa's MILF's please donate.
+  </div>
+  <hr width="80%">
+  <div style="font-size: xx-small; color: grey; text-align: center;">
+    If you no longer wish to receive these emails please
+    <a href="https://momoasmilfs.club/unsubscribe/<%= @user.id %>" title="Click to unsubscribe.">unsubscribe</a>.
+  </div>
+</div>
 </body>
 </html>

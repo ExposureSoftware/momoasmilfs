@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'sign_up/index'
   get 'verify/:id', to: 'verification#verify'
+  get 'unsubscribe/:id', to: 'subscription#delete'
 
   resources :members
 

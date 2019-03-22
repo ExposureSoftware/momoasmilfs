@@ -6,4 +6,10 @@ class Member < ApplicationRecord
 
     self.save
   end
+
+  def unverify
+    self.verified = false
+
+    self.save
+  end
 end
