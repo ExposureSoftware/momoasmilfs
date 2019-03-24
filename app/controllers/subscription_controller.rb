@@ -1,4 +1,4 @@
-class SignUpController < ApplicationController
+class SubscriptionController < ApplicationController
   def unsubscribe
     @member = Member.find(params[:id])
 
