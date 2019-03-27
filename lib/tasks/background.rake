@@ -31,7 +31,7 @@ namespace :background do
   task mail_image: :environment do
     members = Member.where('verified').all
     puts "Found #{members.count} verified members."
-    image = Image.order('created_at').last
+    image = Image.order(created_at: :desc).last
 
     members.each do |member|
       puts "Sending image to #{member.email}"
