@@ -4,7 +4,7 @@ class MembersController < ApplicationController
   end
 
   def show
-    @member = Member.find(params[:id])
+
   end
 
   def create
@@ -24,6 +24,6 @@ class MembersController < ApplicationController
   end
 
   def index
-    @members = Member.all
+    @members = Member.where('verified').count
   end
 end

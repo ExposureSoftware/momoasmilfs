@@ -1,18 +1,3 @@
-<h1>Listing members</h1>
-
-<table>
-  <tr>
-    <th>ID</th>
-    <th>Email</th>
-    <th>Verified</th>
-  </tr>
-
-  <% @members.each do |member| %>
-    <tr>
-      <td><%= member.id %></td>
-      <td><%= member.email %></td>
-      <td><%= member.verified %></td>
-<!--      <td><%#= link_to 'Show', member_path(member) %></td>-->
-    </tr>
-  <% end %>
-</table>
+<div>
+  There are currently <%= @members %> members.
+</div>
