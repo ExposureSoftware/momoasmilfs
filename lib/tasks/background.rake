@@ -34,7 +34,7 @@ namespace :background do
     image = Image.order(created_at: :desc).last
 
     members.each do |member|
-      puts "Sending image to #{member.email}"
+      puts "Sending image #{image.id}, fetched #{image.created_at}, to #{member.email}"
       UserMailer.with(user: member, image: image).daily_image.deliver_now
     end
   end
